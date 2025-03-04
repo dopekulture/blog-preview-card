@@ -1,1 +1,166 @@
-<h1>hey mf</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color: #F4D04E;
+      font-family: Figtree;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #FFFFFF;
+      border: 1px solid #111111;
+      border-radius: 20px;
+      padding: 24px;
+      width: 384px;
+      box-shadow: 8px 8px;
+    }
+
+    .illustration {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 24px;
+    }
+
+    .content {
+      margin-bottom: 24px;
+    }
+
+    .category-text {
+      background-color: #F4D04E;
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 150%;
+      letter-spacing: 0%;
+      margin-bottom: 12px;
+    }
+
+    .publish-date {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0%;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 150%;
+      letter-spacing: 0%;
+      margin-bottom: 12px;
+    }
+
+    h2:hover {
+      cursor: pointer;
+      color: #F4D04E;
+    }
+
+    .description {
+      color: #6B6B6B;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 32px;
+    }
+
+    .author-name {
+      
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+
+  @media screen and (max-width: 375px) {
+
+    .container {
+        width: 327px;
+    }
+
+    .category-text {
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+
+    .publish-date {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+
+    .description {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./assets/images/illustration-article.svg" alt="blog image" class="illustration"/>
+
+    <div class="content">
+      <p class="category-text">Learning</p>
+      <p class="publish-date">Published 21 Dec 2023</p>
+      <h2>HTML & CSS foundations</h2>
+      <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+
+    <div class="author">
+      <img src="./assets/images/image-avatar.webp" alt="author's image" class="avatar"/>
+      <p class="author-name">Greg Hooper</p>
+    </div>
+  </div>
+  
+
+</body>
+</html>
